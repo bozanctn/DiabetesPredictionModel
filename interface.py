@@ -12,6 +12,12 @@ feature_names = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'In
 st.title("Diabetes Prediction")
 st.write("Fill the following information to predict your diabetes risk:")
 
+# GitHub linki ekle
+st.markdown("---")
+st.markdown("### Source Code")
+st.markdown("[View source code on GitHub](https://github.com/bozanctn/DiabetesPredictionModel)")
+st.markdown("---")
+
 user_input = []
 for feature in feature_names:
     value = st.number_input(f"{feature}", min_value=0.0, step=0.1)
